@@ -1,0 +1,62 @@
+site_name: COMSATS Notes
+site_author: Nauman Umer
+site_url: https://nmanumr.github.io/comsats-notes
+
+# Repository
+repo_name: nmanumr/comsats-notes
+repo_url: https://github.com/nmanumr/comsats-notes
+edit_uri: 'blob/master/docs/'
+
+copyright: 'Maintained by Nauman Umer'
+
+# Theme
+theme:
+  name: 'material'
+  feature:
+    tabs: true
+
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/nmanumr.comsats-notes'
+
+pages:
+  - Home: 'index.md'
+  - MTH242:
+    - Index: "MTH242/index.md"
+    - Lecture 01: "MTH242/lec01.md"
+
+# Extensions
+markdown_extensions:
+  - footnotes
+  - def_list
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - admonition
+  - meta
+  - codehilite
+
+extra_css:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-alpha1/katex.min.css'
+  - 'css/index.css'
+
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-alpha1/katex.min.js'
+  - 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-alpha1/contrib/auto-render.min.js'
+  - 'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.min.js'
+  - 'js/index.js'
